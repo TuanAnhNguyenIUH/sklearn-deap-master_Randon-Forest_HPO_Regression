@@ -99,6 +99,7 @@ def _evalFunction(
     verbose=0,
     error_score="raise",
     score_cache={},
+     score_params=None,
 ):
     """Developer Note:
     --------------------
@@ -132,6 +133,7 @@ def _evalFunction(
                 parameters=parameters,
                 fit_params=fit_params,
                 error_score=error_score,
+                score_params=score_params,
             )["test_scores"]
 
             if iid:
